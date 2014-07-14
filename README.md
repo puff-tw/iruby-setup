@@ -1,7 +1,5 @@
 # IRuby 安裝指引
-
-假設你已經安裝完Ruby, 且是用 rbenv 當作為你的版本管理工具
---
+假設已安裝完Ruby, 且是用 rbenv 作為版本管理工具
 
 先裝 python 版本管理工具
 --
@@ -12,12 +10,13 @@ brew doctor
 brew install pyenv zeromq
 ```
 
-修改Shell的環境變數 ( 這邊是用 oh my zsh 的Shell 當範例 )
+修改Shell的環境變數
 --
+這邊是用 oh my zsh 的Shell 當範例, /Users/xxx/ 當中的xxx為你的帳號
 
 ```sh
 echo 'export PYENV_ROOT=/usr/local/opt/pyenv' >> ~/.zshrc
-echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="/Users/xxx/.rbenv/shims:/Users/xxx/.rbenv/shims:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
 echo 'if command -v pyenv > /dev/null; then eval "$(pyenv init -)"; fi"' >> ~/.zshrc
 source ~/.zshrc
 ```
@@ -53,7 +52,7 @@ mkdir ~/.config
 
 ```sh
 iruby
-#會進入 iruby 的console
+#會進入 iruby 的console 大致上像一般 ruby console
 ```
 
 ```sh
@@ -63,4 +62,9 @@ iruby notebook
 #感受一下 web 介面的編輯器，試著改別名及存檔，會存於你的當前目錄
 ```
 
+DEMO
+--
+[簡單測試](http://nbviewer.ipython.org/github/puff-tw/iruby-setup/blob/master/example.ipynb)
+
+你也可以在[nbviewer](http://nbviewer.ipython.org/) 分享你的Notebooks
 
