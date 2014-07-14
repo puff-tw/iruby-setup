@@ -1,4 +1,4 @@
-# IRuby 安裝指引
+# IRuby 安裝指引 ( MAC 版本 )
 假設已安裝完Ruby, 且是用 rbenv 作為版本管理工具
 
 先裝 python 版本管理工具
@@ -17,7 +17,7 @@ brew install pyenv zeromq
 ```sh
 echo 'export PYENV_ROOT=/usr/local/opt/pyenv' >> ~/.zshrc
 echo 'export PATH="/Users/xxx/.rbenv/shims:/Users/xxx/.rbenv/shims:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
-echo 'if command -v pyenv > /dev/null; then eval "$(pyenv init -)"; fi"' >> ~/.zshrc
+echo 'if command -v pyenv > /dev/null; then eval "$(pyenv init -)"; fi' >> ~/.zshrc
 source ~/.zshrc
 ```
 
@@ -66,5 +66,10 @@ DEMO
 --
 [簡單測試](http://nbviewer.ipython.org/github/puff-tw/iruby-setup/blob/master/example.ipynb)
 
-你也可以在[nbviewer](http://nbviewer.ipython.org/) 分享你的Notebooks
+你也可以在[nbviewer](http://nbviewer.ipython.org/) 分享你的筆記本
+.ipynb 檔
 
+心得
+--
+寫程式用的筆記本 ( 在你想要的目錄下執行 iruby notebook )
+可在任意行數去做重覆執行 ( 執行命令 Shift + Enter )
