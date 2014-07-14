@@ -71,5 +71,5 @@ DEMO
 
 心得
 --
-寫程式用的筆記本 ( 在你想要的目錄下執行 iruby notebook )
-可在任意行數去做重覆執行 ( 執行命令 Shift + Enter )
+寫程式用的筆記本 ( 在你想要的目錄下執行 iruby notebook )  <BR>
+可在任意行數去做重覆執行 ( 執行命令 Shift + Enter ) <BR>
